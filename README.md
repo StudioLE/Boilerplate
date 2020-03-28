@@ -1,4 +1,4 @@
-# Boilerplate [![Build Status](https://travis-ci.com/StudioLE/Boilerplate.svg?branch=master)](https://travis-ci.com/StudioLE/Boilerplate)
+# Boilerplate [![Build Status](https://travis-ci.com/StudioLE/Boilerplate.svg?token=XfuJ4MDaZjC9K2zitmv1&branch=master)](https://travis-ci.com/StudioLE/Boilerplate)
 
 A boilerplate static website compiled with [Hugo](https://gohugo.io), continuous integration testing on [Travis CI](https://travis-ci.com) with [TestCafe](https://devexpress.github.io/testcafe), and automated deployment to [GitHub Pages](https://pages.github.com) and [Amazon S3](https://aws.amazon.com/s3).
 
