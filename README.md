@@ -90,7 +90,9 @@ Set the origin domain name to point to the S3 static website - not the S3 bucket
 http://yourbucketname.s3-website-eu-west-1.amazonaws.com
 ```
 
-Add the CloudFront Distribution ID to `invalidate` in `package.json` and `cloudFrontDistributionID` in `config.yml`.
+Add the CloudFront Distribution ID to `invalidate` in `package.json`.
+
+Add the Bucket Name to deployment targets `URL` and the CloudFront Distribution ID to `cloudFrontDistributionID` in `config.yml`.
 
 Set the `CNAME` for your domain to point to the CloudFront Distribution Domain.
 

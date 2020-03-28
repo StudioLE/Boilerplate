@@ -12,8 +12,8 @@ assetDir: resources
 enableGitInfo: true
 deployment:
   targets:
-    - name: example.com
-      URL: s3://example.com
+    - name: S3
+      URL: s3://hugoboilerplate
       cloudFrontDistributionID: E2MS0T3LLT90D8
   matchers:
     - pattern: "^.+\\.(js|css|svg|ttf|woff|woff2)$"
