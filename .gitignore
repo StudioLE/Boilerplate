@@ -1,0 +1,23 @@
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Env
+.env
+
+# Node
+logs
+*.log
+npm-debug.log*
+node_modules/
+
+# Gulp
+static/assets/
+resources/assets/
+
+# Hugo
+public/

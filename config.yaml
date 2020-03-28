@@ -1,0 +1,26 @@
+baseURL: https://example.com/
+languageCode: en-gb
+title: Example Website
+disableKinds: [ "taxonomy", "taxonomyTerm", "RSS" ]
+params:
+  homeTitle: The Example Website / Example
+  titleDivider: /
+  description: This should describe the website.
+  keywords: keywords, go, here
+  author: Laurence Elsdon
+assetDir: resources
+enableGitInfo: true
+deployment:
+  targets:
+    - name: example.com
+      URL: s3://example.com
+      cloudFrontDistributionID: E2MS0T3LLT90D8
+  matchers:
+    - pattern: "^.+\\.(js|css|svg|ttf|woff|woff2)$"
+      cacheControl: "max-age=2592000, no-transform, public"
+      gzip: true
+    - pattern : "^.+\\.(png|jpg)$"
+      cacheControl: "max-age=2592000, no-transform, public"
+      gzip: false
+    - pattern : "^.+\\.(html|xml|json)$"
+      gzip: true

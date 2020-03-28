@@ -1,0 +1,7 @@
+<nav class="nav justify-content-end">
+  <a class="navbar-brand mr-auto" href="/">{{ .Site.Title }}</a>
+  {{ $currentPage := . }}
+  {{ range .Site.Menus.main }}
+  <a class="nav-link {{ with .Page }}{{ if eq $currentPage.Section .Section }}active{{else}}inactive{{ end }}{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+  {{ end }}
+</nav>

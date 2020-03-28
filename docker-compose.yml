@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  nginx:
+    container_name: example
+    image: nginx:1.17.8-alpine
+    volumes:
+      - ./public:/usr/share/nginx/html
+    labels:
+      domain: example.com
+    restart: unless-stopped
+    networks:
+      - traefik
+networks:
+  traefik:
+    external:
+      name: traefik_web

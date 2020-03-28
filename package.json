@@ -1,0 +1,41 @@
+{
+  "name": "boilerplate",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "author": {
+    "name": "Laurence Elsdon",
+    "email": "hi@studiole.uk",
+    "url": "https://studiole.uk"
+  },
+  "homepage": "https://github.com/StudioLE/node-colour-challenge",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StudioLE/Boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/StudioLE/Boilerplate/issues"
+  },
+  "license": "",
+  "scripts": {
+    "start": "npm run build",
+    "test": "testcafe chrome --app \"hugo server --environment production -p 8378\"",
+    "server": "hugo server",
+    "build": "gulp build && hugo --environment production --minify",
+    "clean": "gulp clean",
+    "deploy-dry": "hugo deploy --dryRun",
+    "deploy": "hugo deploy",
+    "invalidate": "aws cloudfront create-invalidation --distribution-id E2MS0T3LLT90D8 --paths \"/*\""
+  },
+  "devDependencies": {
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "testcafe": "^1.8.3"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "browser-update": "^3.3.13",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1"
+  }
+}
