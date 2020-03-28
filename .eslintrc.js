@@ -47,7 +47,10 @@ module.exports = {
     ],
     'consistent-return': 'warn',
     'consistent-this': 'warn',
-    'curly': 'warn',
+    'curly': [
+      'warn',
+      'multi'
+    ],
     'default-case': 'warn',
     'dot-location': [
       'warn',
@@ -222,7 +225,10 @@ module.exports = {
     'object-curly-newline': ['warn', { 'consistent': true }],
     'object-curly-spacing': ['warn', 'always'],
     'object-property-newline': 'warn',
-    'object-shorthand': 'warn',
+    'object-shorthand': [
+      'warn',
+      'properties'
+    ],
     'one-var': 'off',
     'one-var-declaration-per-line': [
       'warn',
@@ -269,7 +275,16 @@ module.exports = {
     'space-before-function-paren': 'off',
     'space-in-parens': 'off',
     'space-infix-ops': 'warn',
-    'space-unary-ops': 'warn',
+    'space-unary-ops': [
+      'warn',
+      {
+        "words": true,
+        "nonwords": false,
+        "overrides": {
+          "!": true
+        }
+      }
+    ],
     'spaced-comment': [
       'warn',
       'always'
