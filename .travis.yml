@@ -36,6 +36,6 @@ deploy:
     skip_cleanup: true
     keep_history: true
     on:
-      branch: master
+      branch: main
 after_script:
   - tree public/
